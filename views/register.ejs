@@ -1,11 +1,22 @@
 <% include partials/header %>
 
-<h1>Signup Form</h1>
-
-<form action="/register" method="POST">
-    <input type="text" name="username" placeholder="username"></input>
-    <input type="password"  name="password" placeholder="password"></input>
-    <button type="submit">Sign Up</button>
+<div class="auth-form-container text-center">
+    <h1>Signup</h1>
+    <form class="auth-form" action="/register" method="POST">
+    <div class="form-group">
+        <input class="form-control" type="text" name="username" placeholder="username">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="password"  name="password" placeholder="password">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success" type="submit">Sign Up</button>
+    </div>
+    
+    <p>Have an account? <a href="/login">Login</a></p>
 </form>
+</div>
+
+
 
 <% include partials/footer %>

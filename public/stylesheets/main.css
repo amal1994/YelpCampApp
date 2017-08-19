@@ -13,3 +13,14 @@
 .inline-form{
     display:inline;
 }
+
+.auth-form-container{
+    max-width:320px;
+    margin:0 auto;
+    height:calc(100vh - 122px);
+}
+
+.auth-form{
+    padding:20px;
+    border:1px solid #d8dee2;
+}
